@@ -18,5 +18,13 @@ public class DataManagerTests
         dataManager.AddStop(new Stop("new stop"));
         Assert.Equal(6,dataManager.Stops.Count);
     }
+    [Fact]
+    public void Test_AddDriver()
+    {
+        Assert.Equal(2,dataManager.Drivers.Count);
+        dataManager.AddDriver(new Driver("new driver"));
+        Assert.Equal(3,dataManager.Stops.Count);
+    }
+
 
 }
